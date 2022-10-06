@@ -1,0 +1,102 @@
+body {
+  font-family: 'Comfortaa';
+}
+
+.weatherContainer {
+    display: flex;
+    width: 200px; 
+    padding: 5px;
+    margin:5px;
+}
+
+.fondo {
+  margin-left: 30%;
+  margin-right: 10%;
+  width: 45%;
+  position:fixed; 
+  animation: move 11s ease-in-out infinite;
+  transform-origin: 50% 50%;   
+  z-index: -2;
+}
+
+.weatherWidget {
+  font-size: 1.5em;
+}
+
+.chisteContainer {
+    display: block;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Comfortaa';
+}
+
+.titulo {
+    color: #000000;
+    font-family: 'Comfortaa';
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+.chiste {
+    margin: 40px 0px 40px 0px;
+    line-height : 2em;
+    text-align: center;
+}
+
+.puntosContainer {
+    margin-bottom: 30px;
+}
+
+.punto{
+    margin: 0px 10px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5em;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 3px solid #000000;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:after {
+    content: "";
+    background-color: #e8fd60cf;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .btn:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .btn {
+      padding: 13px 50px 13px;
+    }
+  }
+
+
+
+
+
